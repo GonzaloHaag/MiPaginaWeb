@@ -110,6 +110,7 @@ h1,h2{
 }
 .section{
     padding-block: 4rem;
+    max-width: 100%;
 
 }
 .section-inner{
@@ -306,5 +307,13 @@ button{
 @media screen and (max-width:900px){
     .btns-certificados{
         flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:420px){
+    .section-title{
+        font-size: 2rem;
+    }
+    .quien-soy-title{
+        font-size: 2rem;
     }
 }
