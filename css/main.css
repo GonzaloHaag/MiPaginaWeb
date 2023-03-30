@@ -3,16 +3,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
   
 }
 :root{
-    scroll-behavior: smooth; /*Nos lleva a la seccion como scrolleando y no tan brutamente*/
+     
     --ff-title:'Dela Gothic One', sans-serif;
     --ff-text: 'Rubik', sans-serif;
     --color-black:#1c1c1c;
     --color-white:#ececec;
     --color-purple: rgba(63, 5, 63, 0.747);
+    
 }
+html{
+    scroll-behavior: smooth; /*Nos lleva a la seccion como scrolleando y no tan brutamente*/
+}
+
 body{
     background-color: var(--color-white);
     color: var(--color-black);
@@ -210,6 +216,47 @@ h1,h2{
 .pelota-container img{
     max-width: 100%;
 }
+/*section contacto*/
+
+form{
+    width: 450px;
+    margin: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+h2{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+textarea{
+    min-height:100px;
+    max-height: 200px; /*Maximo q se puede la altura*/
+    max-width: 100%;
+
+}
+#boton{
+    background-color: #31384A;
+    color: #fff;
+    padding: 20px;
+}
+#boton:hover{
+    cursor: pointer;
+}
+
 /**MOBILE MENU **/
 button{
     background: transparent;
@@ -316,4 +363,18 @@ button{
     .quien-soy-title{
         font-size: 2rem;
     }
+}
+
+@media (max-width:480px){
+    form{
+        width: 100%;
+    }
+}
+
+.gracias{
+    text-align: center;
+    color: #31384A;
+    font-size: 40px;
+    background: rgba(0,0,0,0.4);
+    margin-top: 20px;
 }

@@ -27,6 +27,7 @@
                 <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li> <!--Se pone el # porque es el id de la seccion que quiero que se diriga al clickear-->
                 <li class="nav-item"><a class="nav-link" href="#certificados">Certificados</a></li>
                 <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 
             </ul>
         </nav>
@@ -92,10 +93,21 @@
                         <a target="_blank" href="https://piedra-papel-tijera-xi.vercel.app/" class="btn">Piedra,papel o tijera<i class="bi bi-box-arrow-up-right"></i></a>
                         <a target="_blank" href="https://layout-responsive-gilt.vercel.app/" class="btn">Layout<i class="bi bi-box-arrow-up-right"></i></a>
                         <a target="_blank" href="https://landing-page-three-taupe.vercel.app/" class="btn">Landing page<i class="bi bi-box-arrow-up-right"></i></a>
+                        <a target="_blank" href="https://elpocho-mates.netlify.app/" class="btn">Eccomerce - Mates<i class="bi bi-box-arrow-up-right"></i></a>
                     </div>
 
                 </div>
             </div>
+        </section>
+        <section id="contacto" class="section section-contacto">
+          <form action="enviar.php" method="post"> <!--Envio del formulario-->
+            <h2>CONTACTO</h2>
+            <input type="text" name="Nombre" placeholder="Nombre completo" required>
+            <input type="email" name="Email" placeholder="Email" required>
+            <input type="number" name="telefono" placeholder="Telefono" required>
+            <textarea name="mensaje" placeholder="Deja tu mensaje" required></textarea>
+            <input type="submit" value="ENVIAR" id="boton">
+          </form>
         </section>
     </main>
     <footer class="section section-dark">
